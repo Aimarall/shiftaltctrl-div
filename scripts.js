@@ -4,14 +4,14 @@ document.body.addEventListener('mousedown', function(event){
     let div = document.createElement("div");
     div.style.width = "20px";
     div.style.height = "20px";
-    div.style.backgroundColor = "red";
+    div.style.backgroundColor = "blue";
     div.style.borderRadius = "100%"
     div.style.position = "absolute";
     div.style.top = y + "px";
     div.style.left = x + "px";
     
     if (event.which == 2){
-        div.style.backgroundColor = "blue";
+        div.style.backgroundColor = "red";
     }
 
     if (event.which == 3){
@@ -19,7 +19,6 @@ document.body.addEventListener('mousedown', function(event){
     }
 
     if (event.ctrlKey) {
-        
         div.style.borderRadius = "0px";
         div.style.backgroundColor = "yellow";
     }
